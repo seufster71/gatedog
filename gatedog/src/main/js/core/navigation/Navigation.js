@@ -5,10 +5,10 @@ import NavbarMenu from './../../navigationViews/NavbarMenu.js'
 export default function Navigation(props) {
 
   return (
-	   <nav className="navbar navbar-inverse navbar-fixed-top">
+	   <nav id="mainNav" className="navbar navbar-Public navbar-custom navbar-fixed-top affix">
       <div className="container">
         <NavbarHeader headerName={props.headerName}/>
-        <NavbarMenu/>
+        <NavbarMenu menus={props.menus}/>
       </div>
     </nav>
 
